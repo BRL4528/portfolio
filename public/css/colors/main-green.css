@@ -1,0 +1,328 @@
+/*!
+  * Item: Kitzu
+  * Description: Personal Portfolio Template
+  * Author/Developer: Exill
+  * Author/Developer URL: https://themeforest.net/user/exill
+  * Version: v1.1.0
+  * License: Themeforest Standard Licenses: https://themeforest.net/licenses
+  */
+
+/*----------- Table of Contents -----------*/
+/**
+ * Bootstrap template
+ * Globals
+ * About
+ * Resume
+ * Portfolio
+ * Blog
+ * Contact
+ */
+/*----------- Bootstrap Template -----------*/
+:root {
+  --custom: #4e28a7;
+}
+
+.table-custom,
+.table-custom > th,
+.table-custom > td {
+  background-color: #b1a8da;
+}
+
+.table-hover .table-custom:hover {
+  background-color: #b1a8da;
+}
+
+.table-hover .table-custom:hover > td,
+.table-hover .table-custom:hover > th {
+  background-color: #b1a8da;
+}
+
+.btn-custom {
+  background-color: #4e28a7;
+  border-color: #4e28a7;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background-color: #402188;
+  border-color: #402188;
+  color: #fff;
+}
+
+.btn-custom:focus,
+.btn-custom.focus {
+  box-shadow: 0 0 0 0.2rem rgba(88, 72, 180, 0.5);
+}
+
+.btn-custom.disabled,
+.btn-custom:disabled {
+  background-color: #4e28a7;
+  border-color: #4e28a7;
+  color: #fff;
+}
+
+.btn-custom:not(:disabled):not(.disabled):active,
+.btn-custom:not(:disabled):not(.disabled).active,
+.show > .btn-custom.dropdown-toggle {
+  background-color: #402188;
+  border-color: #491c74;
+  color: #fff;
+}
+
+.btn-custom:not(:disabled):not(.disabled):active:focus,
+.btn-custom:not(:disabled):not(.disabled).active:focus,
+.show > .btn-custom.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #4e28a7;
+}
+
+.btn-outline-custom {
+  border-color: #4e28a7;
+  color: #4e28a7;
+}
+
+.btn-outline-custom:hover {
+  background-color: #4e28a7;
+  border-color: #4e28a7;
+  color: #fff;
+}
+
+.btn-outline-custom:focus,
+.btn-outline-custom.focus {
+  box-shadow: 0 0 0 0.2rem #4e28a7;
+}
+
+.btn-outline-custom.disabled,
+.btn-outline-custom:disabled {
+  background-color: transparent;
+  color: #4e28a7;
+}
+
+.btn-outline-custom:not(:disabled):not(.disabled):active,
+.btn-outline-custom:not(:disabled):not(.disabled).active,
+.show > .btn-outline-custom.dropdown-toggle {
+  background-color: #4e28a7;
+  border-color: #4e28a7;
+  color: #fff;
+}
+
+.btn-outline-custom:not(:disabled):not(.disabled):active:focus,
+.btn-outline-custom:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-custom.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(88, 72, 180, 0.5);
+}
+
+.badge-custom {
+  background-color: #4e28a7;
+  color: #fff;
+}
+
+a.badge-custom:hover,
+a.badge-custom:focus {
+  background-color: #402188;
+  color: #fff;
+}
+
+a.badge-custom:focus,
+a.badge-custom.focus {
+  box-shadow: 0 0 0 0.2rem rgba(88, 72, 180, 0.5);
+  outline: 0;
+}
+
+.alert-custom {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #491c74;
+}
+
+.alert-custom hr {
+  border-top-color: #b1a8da;
+}
+
+.alert-custom .alert-link {
+  color: #0b2e13;
+}
+
+.list-group-item-custom {
+  background-color: #c3e6cb;
+  color: #491c74;
+}
+
+.list-group-item-custom.list-group-item-action:hover,
+.list-group-item-custom.list-group-item-action:focus {
+  background-color: #b1a8da;
+  color: #491c74;
+}
+
+.list-group-item-custom.list-group-item-action.active {
+  background-color: #491c74;
+  border-color: #491c74;
+  color: #fff;
+}
+
+.bg-custom {
+  background-color: #4e28a7 !important;
+}
+
+a.bg-custom:hover,
+a.bg-custom:focus,
+button.bg-custom:hover,
+button.bg-custom:focus {
+  background-color: #402188 !important;
+}
+
+.border-custom {
+  border-color: #4e28a7 !important;
+}
+
+.text-custom {
+  color: #4e28a7 !important;
+}
+
+a.text-custom:hover,
+a.text-custom:focus {
+  color: #351969 !important;
+}
+
+/*----------- Globals -----------*/
+::-moz-selection {
+  background-color: #4e28a7;
+  color: #fff;
+}
+
+::selection {
+  background-color: #4e28a7;
+  color: #fff;
+}
+
+a:not(.btn) {
+  color: #4e28a7;
+}
+
+a:not(.btn):hover,
+a:not(.btn):focus {
+  color: #351969;
+}
+
+.color-scheme {
+  color: #4e28a7;
+}
+
+.background-scheme {
+  background-color: #4e28a7;
+}
+
+.btn.button-scheme {
+  background-color: #4e28a7 !important;
+  border: 1px solid #4e28a7 !important;
+}
+
+.btn.button-scheme:focus {
+  background-color: #351969 !important;
+  border-color: #351969 !important;
+  box-shadow: none !important;
+}
+
+.btn.button-outline {
+  background-color: transparent !important;
+  border: 1px solid #4e28a7 !important;
+  color: #222 !important;
+}
+
+.btn.button-outline:focus {
+  background-color: rgba(34, 34, 34, 0.05) !important;
+  border-color: #351969 !important;
+  box-shadow: none !important;
+}
+
+.lightbox-wrapper
+  .lightbox-content
+  .section-heading.page-heading
+  > .animated-bar {
+  background-color: #4e28a7;
+}
+
+/*----------  About ligthbox  ----------*/
+/* About: Info */
+#about .info-section .info-content .content-subtitle {
+  color: #4e28a7;
+}
+
+#about .info-section .info-content .content-follow li a:hover,
+#about .info-section .info-content .content-follow li a:focus {
+  color: #4e28a7;
+}
+
+/* About: Services */
+#about .services-section .single-service:hover {
+  border-bottom-color: #4e28a7;
+}
+
+#about .services-section .single-service .service-icon {
+  color: #4e28a7;
+}
+
+/* About: Testimonials */
+#about .testimonials-section .single-review .review-icon {
+  color: #4e28a7;
+}
+
+/* About: Pricing */
+#about .pricing-section .single-plan .plan-icon {
+  color: #4e28a7;
+}
+
+/*----------- Resume lightbox -----------*/
+/* Resume: Resume */
+#resume .resume-section .resume-item {
+  border-left-color: #4e28a7;
+}
+
+#resume .resume-section .resume-item .item-arrow:before {
+  background-color: #4e28a7;
+}
+
+#resume .resume-section .resume-item .item-arrow:after {
+  border-left-color: #4e28a7;
+}
+
+/* Resume: Skills */
+#resume .skills-section .single-skill .skill-progress .progress-bar {
+  background-color: #4e28a7;
+}
+
+/*----------- Portfolio lightbox -----------*/
+/* Portfolio: Portfolio */
+#portfolio .portfolio-section .filter-control > li:hover,
+#portfolio .portfolio-section .filter-control > li.tab-active {
+  color: #2ec04f;
+}
+
+#portfolio .portfolio-section .filter-control > li:hover:before,
+#portfolio .portfolio-section .filter-control > li.tab-active:before {
+  background-color: #2ec04f;
+}
+
+#portfolio
+  .portfolio-section
+  .portfolio-grid
+  .portfolio-wrapper
+  .item-content
+  .content-more {
+  color: #4e28a7;
+}
+
+/*----------  Blog lightbox  ----------*/
+/* Blog: Blog */
+#blog .blog-section .single-post .post-img .content-date {
+  background-color: #4e28a7;
+}
+
+/*----------  Contact Lightbox  ----------*/
+/* Contact: Contact */
+#contact .contact-section .contact-form .form-group .form-control:focus {
+  border-bottom: 1px solid #34ce57;
+}
+
+#contact .contact-section .contact-info .list-info .info-icon i {
+  color: #4e28a7;
+}
